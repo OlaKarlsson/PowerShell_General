@@ -18,7 +18,7 @@ $connection.Open()
 $command = $connection.CreateCommand()
 $command.CommandText  = $query
 
-$result = $command.ExecuteReader()
+$command.ExecuteNonQuery()
 
 
 $connection.Close()
